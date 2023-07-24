@@ -1,4 +1,5 @@
 import streamlit
+import pandas
 streamlit.title('My Mom New Healthy Diner')
 
 streamlit.header('Breakfast Favorites')
