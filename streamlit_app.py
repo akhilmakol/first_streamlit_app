@@ -1,7 +1,7 @@
 
 # Github and Streamlit Set-up 
 import streamlit
-streamlit.title('My Mom's New Healthy Diner')
+streamlit.title('My Mom New Healthy Diner')
 
 # Github and Streamlit Iterative Improvements 
 
