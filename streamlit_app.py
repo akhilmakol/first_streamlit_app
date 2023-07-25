@@ -65,9 +65,6 @@ if streamlit.button('Get Fruit List'):
    my_data_rows = get_fruit_load_list()
    streamlit.dataframe(my_data_rows)
 
-# don't run anything past here while we troubleshoot
-streamlit.stop()
-
 # Allow the nd user to adda fruit to the list
 def insert_row_snowflake(new_fruit):
    with my_cnx.cursor() as my_cur:
@@ -86,3 +83,6 @@ streamlit.write('Thanks for adding ', add_my_fruit)
 fruityvice_normalized1 = pandas.json_normalize(add_my_fruit.json())
 streamlit.dataframe(fruityvice_normalized1)
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+
+# don't run anything past here while we troubleshoot
+streamlit.stop()
