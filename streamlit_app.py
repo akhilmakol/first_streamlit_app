@@ -80,9 +80,9 @@ if streamlit.button('Add a Fruit to the List'):
    streamlit.text(back_from_function)
 
    
-#fruit_choice1 = streamlit.text_input('What fruit would you like information about?','Banana')
-#add_my_fruit= requests.get("https://fruityvice.com/api/fruit/" + fruit_choice1)
-#streamlit.write('Thanks for adding ', add_my_fruit)
-#fruityvice_normalized1 = pandas.json_normalize(add_my_fruit.json())
-#streamlit.dataframe(fruityvice_normalized1)
-#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+fruit_choice1 = streamlit.text_input('What fruit would you like information about?','Banana')
+add_my_fruit= requests.get("https://fruityvice.com/api/fruit/" + fruit_choice1)
+streamlit.write('Thanks for adding ', add_my_fruit)
+fruityvice_normalized1 = pandas.json_normalize(add_my_fruit.json())
+streamlit.dataframe(fruityvice_normalized1)
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
